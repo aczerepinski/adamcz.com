@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Hello AdamczDotCom!</title>
+    <%# <link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro|Oswald' rel='stylesheet' type='text/css'> %>
+    <title>Adam Czerepinski</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
-    <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
+
+    <nav role="navigation" class="navbar navbar-default navbar-static-top" id="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand" id="logo">CZ</a>
+          <ul class="nav navbar-nav">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">DEV</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">BLOG</a></li>
           </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+        </div> <!-- /navbar-header -->
+      </div> <!-- /container --> 
+    </nav>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
