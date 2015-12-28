@@ -4,4 +4,16 @@ defmodule AdamczDotCom.PageController do
   def index(conn, _params) do
     render conn, "index.html"
   end
+
+  def about(conn, _params) do
+    render conn, "about.html"
+  end
+
+  def dev(conn, _params) do
+    render conn, "dev.html"
+  end
+
+  def music(conn, _params) do
+    render conn, "music.html"
+  end
 end

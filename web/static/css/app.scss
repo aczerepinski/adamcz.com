@@ -10,6 +10,7 @@
 $forest: #004819;
 $cream: #fdf6e2;
 $blue: #007bc8;
+$grey: #444;
 
 $primaryFont: 'Open Sans', sans-serif;
 $headerFont: 'Oswald', sans-serif;
@@ -118,7 +119,23 @@ body {
 }
 
 main {
-  /*min-height: 1000px;*/
+  padding: 0 30px;
+}
+
+main h1 {
+  color: $grey;
+}
+
+main p {
+  color: $grey;
+  font-size: 1.2em;
+}
+
+main a {
+  color: $forest;
+  &:hover {
+    color: $blue;
+  }
 }
 
 .flex-container {
@@ -130,11 +147,12 @@ main {
   width: 100%;
   justify-content: center;
   align-items: center;
-  color: $forest;
+  
 }
 
 .flex-row {
   width: 100%;
+  color: $grey;
 }
 
 /* Phoenix flash messages */

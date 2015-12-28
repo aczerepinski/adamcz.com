@@ -18,10 +18,10 @@
         <div class="navbar-header">
           <a href="/" class="navbar-brand" id="logo">CZ</a>
           <ul class="nav navbar-nav">
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">DEV</a></li>
-            <li><a href="#">MUSIC</a></li>
-            <li><a href="#">BLOG</a></li>
+            <li><%= link "ABOUT", to: page_path(@conn, :about) %></li>
+            <li><%= link "DEV", to: page_path(@conn, :dev) %></li>
+            <li><%= link "MUSIC", to: page_path(@conn, :music) %></li>
+            <li><%= link "BLOG", to: blog_path(@conn, :index) %></li>
           </ul>
         </div> <!-- /navbar-header -->
       </div> <!-- /container --> 
