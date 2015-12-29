@@ -31,6 +31,7 @@ h4, p, a {
 #navbar {
   background-color: $cream;
   border-bottom: $borderWidth $forest solid;
+  margin: 0;
 }
 
 #navbar ul {
@@ -109,7 +110,7 @@ svg {
 
 
 /* Main Page Layout */
-body {
+html, body {
   height: 100%;
   width: 100%;
   top: 0;
@@ -119,7 +120,13 @@ body {
 }
 
 main {
-  padding: 0 30px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 55px 30px;
+  overflow: scroll;
 }
 
 main h1 {
@@ -151,9 +158,21 @@ main a {
 }
 
 .flex-row {
-  width: 100%;
-  color: $grey;
+   color: $grey;
+   text-align: center;
 }
+
+/* Page specific */
+
+.bunch-of-code {
+  position: absolute;
+  top: 65px;
+  left: 15px;
+  opacity: 0.06;
+  overflow: hidden;
+
+}
+
 
 /* Phoenix flash messages */
 .alert:empty { display: none; }

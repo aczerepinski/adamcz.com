@@ -1,8 +1,59 @@
 <div class="flex-container">
   <div class="flex-row">
     <h1>ADAM CZEREPINSKI</h1>
+    <h2>Web Developer</h2>
   </div>
-  <div class="flex-row">
-    <h4>Web Developer</h4>
-  </div>
+</div>
+
+<div class="bunch-of-code">
+<pre><code class="elixir">
+ @doc """
+  Reduces the enumerable into an element.
+  Most of the operations in `Enum` are implemented in terms of reduce.
+  This function should apply the given `t:reducer/0` function to each
+  item in the enumerable and proceed as expected by the returned
+  accumulator.
+  As an example, here is the implementation of `reduce` for lists:
+      def reduce(_,     {:halt, acc}, _fun),   do: {:halted, acc}
+      def reduce(list,  {:suspend, acc}, fun), do: {:suspended, acc, &reduce(list, &1, fun)}
+      def reduce([],    {:cont, acc}, _fun),   do: {:done, acc}
+      def reduce([h|t], {:cont, acc}, fun),    do: reduce(t, fun.(h, acc), fun)
+  """
+  @spec reduce(t, acc, reducer) :: result
+  def reduce(enumerable, acc, fun)
+
+  @doc """
+  Checks if an element exists within the enumerable.
+  It should return `{:ok, boolean}`.
+  If `{:error, __MODULE__}` is returned a default algorithm using
+  `reduce` and the match (`===`) operator is used. This algorithm runs
+  in linear time.
+  _Please force use of the default algorithm unless you can implement an
+  algorithm that is significantly faster._
+  """
+  @spec member?(t, term) :: {:ok, boolean} | {:error, module}
+  def member?(enumerable, element)
+
+  @doc """
+  Retrieves the enumerable's size.
+  It should return `{:ok, size}`.
+  If `{:error, __MODULE__}` is returned a default algorithm using
+  `reduce` and the match (`===`) operator is used. This algorithm runs
+  in linear time.
+  _Please force use of the default algorithm unless you can implement an
+  algorithm that is significantly faster._
+  """
+  @spec count(t) :: {:ok, non_neg_integer} | {:error, module}
+  def count(enumerable)
+end
+
+defmodule Enum do
+  import Kernel, except: [max: 2, min: 2]
+
+  @moduledoc """
+  Provides a set of algorithms that enumerate over enumerables according
+  to the `Enumerable` protocol.
+      iex> Enum.map([1, 2, 3], fn(x) -> x * 2 end)
+      [2, 4, 6]
+</code></pre>
 </div>
