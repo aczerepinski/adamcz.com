@@ -1,1 +1,15 @@
-<h1>BLOG INDEX</h1>
+<h2>BLOG</h2>
+
+<ul>
+  <li>A blog post</li>
+  <li>Another blog post</li>
+</ul>
+<pre><code class="elixir">
+# Spawns an Elixir process (not an operating system one!)
+spawn_link(fn ->
+  send parent, {:msg, "hello world"}
+end)
+</code></pre>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
