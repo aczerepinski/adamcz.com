@@ -26,6 +26,21 @@ h4, p, a, li {
   font-family: $primaryFont;
 }
 
+.btn-cz {
+  border: $borderWidth solid $forest;
+  border-radius: 0;
+  background-color: $cream;
+  color: $forest;
+  font-family: $headerFont;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.form-control {
+  border-radius: 0;
+  font-family: $primaryFont;
+}
 
 /* Navbar */
 #navbar {
@@ -135,6 +150,10 @@ main h1, main h3 {
 
 main h2 {
   color: $forest;
+}
+
+main h3 {
+  font-size: 2em;
 }
 
 main p, main li {
