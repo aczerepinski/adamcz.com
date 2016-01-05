@@ -1,0 +1,12 @@
+<h2>THIS IS WHERE YOU EDIT YOUR BLOG POSTS</h2>
+<%= form_for @changeset, blog_path(@conn, :update, @post), fn f -> %>
+  <div class="form-group">
+    <%= text_input f, :title,
+      class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= textarea f, :content,
+      class: "form-control big-form" %>
+  </div>
+  <%= submit "SUBMIT", class: "btn btn-cz" %>
+<% end %>

@@ -211,12 +211,24 @@ main pre {
   color: #666;
 }
 
+textarea.big-form {
+  height: 200px;
+}
+
 .blog-content {
   
 }
 
 .blog-content pre {
   margin: 5px 25px;
+}
+
+.blog-index {
+  text-align: center;
+  list-style-type: none;
+  li a {
+    font-family: $headerFont;
+  }
 }
 
 /* Phoenix flash messages */

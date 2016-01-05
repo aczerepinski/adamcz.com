@@ -1,15 +1,13 @@
 <h2>BLOG</h2>
+<p>I enjoy writing primarily because it helps to solidfy my understanding of new concepts and ideas. I hope some of it is useful to others as well.</p>
 
-<ul>
-  <li>A blog post</li>
-  <li>Another blog post</li>
+<ul class="blog-index">
+  <%= for post <- @posts do %>
+    <li><span class="blog-index-date"><%= post.date %></span>
+    <%= link String.upcase(post.title), to: blog_path(@conn, :show, post.id) %></li>
+  <% end %>
 </ul>
-<pre><code class="elixir">
-# Spawns an Elixir process (not an operating system one!)
-spawn_link(fn ->
-  send parent, {:msg, "hello world"}
-end)
-</code></pre>
+
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

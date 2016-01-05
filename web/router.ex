@@ -16,8 +16,7 @@ defmodule AdamczDotCom.Router do
   scope "/", AdamczDotCom do
     pipe_through :browser # Use the default browser stack
 
-    get "/blog/:post", BlogController, :show
-    get "/blog", BlogController, :index
+    resources "/blog", BlogController, only: [:index, :show, :new, :create, :edit, :update]
     get "/about", PageController, :about
     get "/dev", PageController, :dev
     get "/music", PageController, :music
