@@ -5,6 +5,10 @@
       class: "form-control" %>
   </div>
   <div class="form-group">
+    <%= text_input f, :date, placeholder: Ecto.DateTime.local, 
+      class: "form-control" %>
+  </div>
+  <div class="form-group">
     <%= textarea f, :content, placeholder:
       "Some content would be good too",
       class: "form-control big-form" %>

@@ -1,8 +1,6 @@
 defmodule AdamczDotCom.Post do
   use AdamczDotCom.Web, :model
 
-  # defstruct [:id, :title, :date, :content, :active]
-  
   schema "posts" do
     field :title, :string
     field :date, Ecto.DateTime
