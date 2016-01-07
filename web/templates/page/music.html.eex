@@ -1,1 +1,17 @@
 <h2>MUSIC</h2>
+<p>I've composed music for just about every imaginable setting. Jazz big bands, symphony orceshtras, tv shows, video games... Here are a few examples from some of the projects I've worked on:</p>
+
+<!-- ADAMCZ.COM -->
+<div class="dev-project">
+  <div class="dev-project-header">
+    <span class="dev-project-title">BATTLE PET GALAXY</span>
+    <span class="dev-project-date">JULY 2014</span>
+  </div>
+  <div class="dev-project-description">
+    <p>asdfad</p>
+  <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/LxzqZpQ3-dk"></iframe>
+          </div>
+    <a href="http://www.battlepetgalaxy.com/" class="btn btn-project" role="button" target="_blank">DOWNLOAD THE APP</a>
+  </div>
+</div>
