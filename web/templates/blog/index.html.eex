@@ -6,7 +6,9 @@
     <li><span class="blog-index-date"><%= Ecto.DateTime.to_date(post.date) %></span>
     <%= link String.upcase(post.title), to: blog_path(@conn, :show, post.id) %></li>
   <% end %>
-  <li><span class="blog-index-date"><%= link "Write a new blog post (but only if you are me)", to: blog_path(@conn, :new) %></span></li>
+  <%= if @current_user do %>
+    <li><span class="blog-index-date"><%= link "Write a new blog post (but only if you are me)", to: blog_path(@conn, :new) %></span></li>
+  <% end %>
 </ul>
 
 

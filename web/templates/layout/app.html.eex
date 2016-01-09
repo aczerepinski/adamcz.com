@@ -22,6 +22,10 @@
             <li><%= link "DEV", to: page_path(@conn, :dev) %></li>
             <li><%= link "MUSIC", to: page_path(@conn, :music) %></li>
             <li><%= link "BLOG", to: blog_path(@conn, :index) %></li>
+            <%= if @current_user do %>
+            <li><%= link "LOGOUT", to: session_path(@conn, :delete, @current_user),
+              method: "delete" %></li>
+            <% end %>
           </ul>
         </div> <!-- /navbar-header -->
       </div> <!-- /container --> 

@@ -1,5 +1,6 @@
 defmodule AdamczDotCom.BlogController do
   use AdamczDotCom.Web, :controller
+  plug :authenticate when action in [:new, :create, :edit, :udpate]
   alias AdamczDotCom.Post
 
   def index(conn, _params) do
@@ -50,6 +51,17 @@ defmodule AdamczDotCom.BlogController do
         conn
         |> put_flash(:error, "oh noes something went wrong")
         |> redirect(to: blog_path(conn, :index))
+    end
+  end
+
+  defp authenticate(conn, _opts) do
+    if conn.assigns.current_user do
+      conn
+    else
+      conn
+      |> put_flash(:error, "Sorry, only Adam gets to do that.")
+      |> redirect(to: page_path(conn, :index))
+      |> halt()
     end
   end
 

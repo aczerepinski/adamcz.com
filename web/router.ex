@@ -7,6 +7,7 @@ defmodule AdamczDotCom.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug AdamczDotCom.Auth, repo: AdamczDotCom.Repo
   end
 
   pipeline :api do
@@ -15,8 +16,9 @@ defmodule AdamczDotCom.Router do
 
   scope "/", AdamczDotCom do
     pipe_through :browser # Use the default browser stack
-
+    resources "/users", UserController
     resources "/blog", BlogController, only: [:index, :show, :new, :create, :edit, :update]
+    resources "/sessions", SessionController, only: [:new, :create, :delete]
     get "/about", PageController, :about
     get "/dev", PageController, :dev
     get "/music", PageController, :music

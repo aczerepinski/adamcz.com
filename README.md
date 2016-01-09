@@ -2,6 +2,8 @@
 
 This is my personal website & blog. Not much to see here, but you're free to use anything you like.
 
+The authentication code is from McCord/Tate/Valim's Programming Phoenix book.
+
 
 The MIT License (MIT)
 Copyright (c) 2015 Adam Czerepinski
