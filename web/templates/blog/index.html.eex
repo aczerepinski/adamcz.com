@@ -5,19 +5,23 @@
   <%= for post <- @posts do %>
     <li>
       <span class="blog-index-date"><%= Ecto.DateTime.to_date(post.date) %></span>
-      <%= link String.upcase(post.title), to: blog_path(@conn, :show, post.id) %>
+      <%= link String.upcase(post.title), to: blog_path(@conn, :show, post.slug) %>
       <%= if @current_user do %>
         <span class="blog-index-date">
-          <%= link "EDIT", to: blog_path(@conn, :edit, post.id) %>
+          <%= AdamczDotCom.BlogView.post_status(post.active) %>
+        </span>
+        <span>
+          <%= link "EDIT", to: blog_path(@conn, :edit, post.slug) %>
         </span>
       <% end %>
     </li>
   <% end %>
-  <%= if @current_user do %>
-    <li><span class="blog-index-date"><%= link "Write a new blog post (but only if you are me)", to: blog_path(@conn, :new) %></span></li>
-  <% end %>
 </ul>
 
+<%= if @current_user do %>
+  <%= link "NEW POST", to: blog_path(@conn, :new),
+  role: "button", class: "btn btn-project" %>
+<% end %>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>

@@ -16,6 +16,7 @@
     <nav role="navigation" class="navbar navbar-default navbar-static-top" id="navbar">
       <div class="container">
         <div class="navbar-header">
+        
           <a href="/" class="navbar-brand" id="logo">CZ</a>
           <ul class="nav navbar-nav">
             <li><%= link "ABOUT", to: page_path(@conn, :about) %></li>
@@ -23,9 +24,8 @@
             <li><%= link "MUSIC", to: page_path(@conn, :music) %></li>
             <li><%= link "BLOG", to: blog_path(@conn, :index) %></li>
             <%= if @current_user do %>
-            <li><%= link "LOGOUT", to: session_path(@conn, :delete, @current_user),
-              method: "delete" %></li>
-            <% end %>
+            <li><%= link "LOGOUT", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
+        <% end %>
           </ul>
         </div> <!-- /navbar-header -->
       </div> <!-- /container --> 

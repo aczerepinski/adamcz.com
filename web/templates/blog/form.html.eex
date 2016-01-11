@@ -1,0 +1,20 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <div class="form-group">
+    <%= text_input f, :title, placeholder: "Give your post a title", 
+      class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= text_input f, :date, placeholder: Ecto.DateTime.local, 
+      class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= textarea f, :content, placeholder:
+      "Some content would be good too",
+      class: "form-control big-form" %>
+  </div>
+  <div class="form-group">
+  <%= radio_button f, :active, "true" %>Active<br>
+  <%= radio_button f, :active, "false" %>Inactive
+  </div>
+  <%= submit "SUBMIT", class: "btn btn-cz" %>
+  <% end %>

@@ -1,17 +1,3 @@
 <h2>THIS IS WHERE YOU WRITE YOUR BLOG POSTS</h2>
-<%= form_for @changeset, blog_path(@conn, :create), fn f -> %>
-  <div class="form-group">
-    <%= text_input f, :title, placeholder: "Give your post a title", 
-      class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= text_input f, :date, placeholder: Ecto.DateTime.local, 
-      class: "form-control" %>
-  </div>
-  <div class="form-group">
-    <%= textarea f, :content, placeholder:
-      "Some content would be good too",
-      class: "form-control big-form" %>
-  </div>
-  <%= submit "SUBMIT", class: "btn btn-cz" %>
-<% end %>
+<%= render "form.html", changeset: @changeset,
+                        action: blog_path(@conn, :create) %>

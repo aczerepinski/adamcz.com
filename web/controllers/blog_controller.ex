@@ -8,8 +8,8 @@ defmodule AdamczDotCom.BlogController do
     render conn, "index.html", posts: posts
   end
 
-  def show(conn, %{"id" => id}) do
-    post = Repo.get(Post, id)
+  def show(conn, %{"slug" => slug}) do
+    post = Repo.get_by(Post, slug: slug)
     render conn, "show.html", post: post
   end
 
@@ -30,23 +30,22 @@ defmodule AdamczDotCom.BlogController do
         |> put_flash(:error, "oh noes something went wrong")
         |> redirect(to: blog_path(conn, :index))
     end
-    render conn, "new.html", changeset: changeset
   end
 
-  def edit(conn, %{"id" => id}) do
-    post = Repo.get(Post, id)
+  def edit(conn, %{"slug" => slug}) do
+    post = Repo.get_by(Post, slug: slug)
     changeset = Post.changeset(post)
     render conn, "edit.html", post: post, changeset: changeset
   end
 
-  def update(conn, %{"id" => id, "post" => post_params}) do
-    post = Repo.get!(Post, id)
+  def update(conn, %{"slug" => slug, "post" => post_params}) do
+    post = Repo.get_by(Post, slug: slug)
     changeset = Post.changeset(post, post_params)
     case Repo.update(changeset) do
       {:ok, post} ->
         conn
         |> put_flash(:info, "#{post.title} updated")
-        |> redirect(to: blog_path(conn, :index))
+        |> redirect(to: blog_path(conn, :show, post.slug))
       {:error, _changeset} ->
         conn
         |> put_flash(:error, "oh noes something went wrong")
