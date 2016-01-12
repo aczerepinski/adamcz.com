@@ -39,4 +39,8 @@ defmodule AdamczDotCom.Post do
     |> String.downcase
     |> String.replace(" ", "_")
   end
+
+  def active(query) do
+    from p in query, where: p.active == true
+  end
 end

@@ -4,12 +4,24 @@ defmodule AdamczDotCom.BlogController do
   alias AdamczDotCom.Post
 
   def index(conn, _params) do
-    posts = Repo.all(Post)
+    if conn.assigns.current_user do
+      posts = Repo.all(Post)
+    else
+      posts = Post
+      |> Post.active
+      |> Repo.all
+    end
     render conn, "index.html", posts: posts
   end
 
   def show(conn, %{"slug" => slug}) do
     post = Repo.get_by(Post, slug: slug)
+    if !post.active && !conn.assigns.current_user do
+      conn
+      |> put_flash(:error, "Sorry, only Adam gets to do that.")
+      |> redirect(to: page_path(conn, :index))
+      |> halt()
+    end
     render conn, "show.html", post: post
   end
 
