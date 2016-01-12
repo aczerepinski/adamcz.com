@@ -1,4 +1,4 @@
-<h2>ABOUT</h2>
+<h2 class="main-title">ABOUT ME</h2>
 <p>Welcome to my website! I'm a web developer from Wisconsin, currently living in Massachusetts with my wife and son.</p>
 <p>I love writing code, and enjoy learning new languages and frameworks. I've worked with Elixir, Ruby, JavaScript, Python, PHP, Phoenix, Rails, Sinatra, Slim, Codeigniter, PostgreSQL, MySQL, Sass, CSS, jQuery... In other words, I'm fluent in the tools needed to bring ideas to life on the web.</p>
 <p>Before I was a web developer, I was a jazz trumpet player and composer. I have a bachelor's degree from Berklee College of Music and a doctorate from the Manhattan School of Music. I don't play professionally any longer, but I still hold a deep love for jazz music and listen to it all day long while I code.</p>
