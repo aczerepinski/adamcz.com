@@ -1,6 +1,6 @@
 defmodule AdamczDotCom.UserController do
   use AdamczDotCom.Web, :controller
-  plug :authenticate
+  # plug :authenticate
   alias AdamczDotCom.User
 
   plug :scrub_params, "user" when action in [:create, :update]
