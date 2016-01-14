@@ -43,4 +43,8 @@ defmodule AdamczDotCom.Post do
   def active(query) do
     from p in query, where: p.active == true
   end
+
+  def sorted(query) do
+    from p in query, order_by: [desc: p.date]
+  end
 end
