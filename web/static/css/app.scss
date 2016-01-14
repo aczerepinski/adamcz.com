@@ -120,10 +120,6 @@ footer {
   border-top: $borderWidth $forest solid;
 }
 
-.footer-icons {
-
-}
-
 .svg-icon {
    margin: 0 10px;
 }
@@ -294,3 +290,17 @@ form.link, form.button {
   display: inline;
 }
 
+@media screen and (max-width: 450px) {
+  #navbar a {
+    font-size: 1em;
+  }
+
+  footer {
+    height: 30px;
+  }
+
+  svg {
+    height: 15px;
+  }
+
+}
