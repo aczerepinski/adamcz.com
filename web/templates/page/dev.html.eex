@@ -26,7 +26,7 @@
   </div>
   <div class="dev-project-description">
     <p>
-     Jazz Robot is a Ruby/Rails app that facilitates learning to play songs in all 12 musical keys. The app offers a collection of songs that can be filtered by difficulty or composer, and transposed into any desired key (or into raw functional analysis). It also includes a client-side educational game that accesses a game data API, storing questions and correct answers in private variables. I blogged about the song index's filtering UI <a href="#">here</a>. 
+     Jazz Robot is a Ruby/Rails app that facilitates learning to play songs in all 12 musical keys. The app offers a collection of songs that can be filtered by difficulty or composer, and transposed into any desired key (or into raw functional analysis). It also includes a client-side educational game that accesses a game data API, storing questions and correct answers in private variables. I blogged about the song index's filtering UI <%= link "here", to: blog_path(@conn, :index) %>. 
     </p>
     <a href="https://jazzrobot.herokuapp.com/" class="btn btn-project" role="button" target="_blank">VISIT THE SITE</a>
     <a href="https://github.com/aczerepinski/jazz_robot" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>

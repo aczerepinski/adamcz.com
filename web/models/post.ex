@@ -37,7 +37,8 @@ defmodule AdamczDotCom.Post do
   defp slugify(string) do
     string
     |> String.downcase
-    |> String.replace(" ", "_")
+    |> String.replace(" ", "-")
+    |> String.replace(~r/[!.?']/, "")
   end
 
   def active(query) do
