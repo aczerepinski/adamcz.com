@@ -1,6 +1,6 @@
 defmodule AdamczDotCom.BlogController do
   use AdamczDotCom.Web, :controller
-  plug :authenticate when action in [:new, :create, :edit, :udpate]
+  plug :authenticate when action in [:new, :create, :edit, :update]
   alias AdamczDotCom.Post
 
   def index(conn, _params) do

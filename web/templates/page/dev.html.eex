@@ -2,6 +2,23 @@
 <p>Here are some of the personal/side projects I've enjoyed working on:</p>
 
 
+<!-- PRACTICE LOG -->
+<div class="dev-project">
+  <div class="dev-project-header">
+    <span class="dev-project-title">PRACTICE LOG</span>
+    <span class="dev-project-date">MARCH 2016 - PRESENT</span>
+  </div>
+  <div class="dev-project-description">
+    <p>
+     Practice Log is a resource for musicians to set goals and track their practice activity. It's a React/Redux app running on an Elixir/Phoenix/PostgreSQL backend.
+    </p>
+    <div class="dev-project-img">
+      <img src="/images/practice-log.jpg"/>
+    </div>
+   <button class="btn btn-project btn-inactive">COMING SOON</button>
+  </div>
+</div>
+
 
 <!-- ADAMCZ.COM -->
 <div class="dev-project">
@@ -11,7 +28,7 @@
   </div>
   <div class="dev-project-description">
     <p>
-     This website - meaning adamcz.com, the site you are currently looking at - is an Elixir/Phoenix application. I built it to give myself a nice, bloat-free blogging platform, and to get my feet wet with the Elixir programming language.
+     This website - meaning adamcz.com - is an Elixir/Phoenix application. I built it to give myself a self-hosted blogging platform, and to get my feet wet with the Elixir programming language.
     </p>
     <a href="https://github.com/aczerepinski/adamcz_dot_com" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
   </div>
@@ -26,8 +43,11 @@
   </div>
   <div class="dev-project-description">
     <p>
-     Jazz Robot is a Ruby/Rails app that facilitates learning to play songs in all 12 musical keys. The app offers a collection of songs that can be filtered by difficulty or composer, and transposed into any desired key (or into raw functional analysis). It also includes a client-side educational game that accesses a game data API, storing questions and correct answers in private variables. I blogged about the song index's filtering UI <%= link "here", to: blog_path(@conn, :index) %>. 
+     Jazz Robot is a Ruby/Rails app that facilitates learning to play songs in all 12 musical keys. The app offers a collection of songs that can be filtered by difficulty or composer, and transposed into any desired key (or into raw functional analysis). It also includes a client-side educational game that helps users learn the relationships between keys and chords. I blogged about the song index's filtering UI <%= link "here", to: blog_path(@conn, :index) %>. 
     </p>
+    <div class="dev-project-img">
+      <img src="/images/jazzrobot.jpg"/>
+    </div>
     <a href="https://jazzrobot.herokuapp.com/" class="btn btn-project" role="button" target="_blank">VISIT THE SITE</a>
     <a href="https://github.com/aczerepinski/jazz_robot" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
   </div>
