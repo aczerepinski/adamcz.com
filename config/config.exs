@@ -14,6 +14,8 @@ config :adamcz_dot_com, AdamczDotCom.Endpoint,
   pubsub: [name: AdamczDotCom.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+config :adamcz_dot_com, ecto_repos: [AdamczDotCom.Repo]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

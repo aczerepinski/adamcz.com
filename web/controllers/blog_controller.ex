@@ -25,12 +25,12 @@ defmodule AdamczDotCom.BlogController do
   end
 
   def new(conn, _params) do
-    changeset = Post.changeset(%Post{})
+    changeset = Post.changeset(%{})
     render conn, "new.html", changeset: changeset
   end
 
   def create(conn, %{"post" => post_params}) do
-    changeset = Post.changeset(%Post{}, post_params)
+    changeset = Post.changeset(%{}, post_params)
     case Repo.insert(changeset) do
       {:ok, post} ->
         conn
