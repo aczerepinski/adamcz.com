@@ -20,6 +20,7 @@ defmodule AdamczDotCom.Router do
     resources "/blog", BlogController, only: [:index, :show, :new, 
         :create, :edit, :update], param: "slug"
     resources "/sessions", SessionController, only: [:new, :create, :delete]
+    resources "/tags", TagController, only: [:index, :show, :new, :create, :edit, :udpate, :delete]
     get "/about", PageController, :about
     get "/dev", PageController, :dev
     get "/music", PageController, :music

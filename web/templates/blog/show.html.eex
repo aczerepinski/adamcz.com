@@ -1,4 +1,9 @@
 <h3 class="blog-title"><%= String.upcase(@post.title) %></h3>
+<div class="blog-tags">
+  <%= for tag <- @post.tags do %>
+  <div class="tag <%= tag.name %>"><%= tag.name %></div>
+  <% end %>
+</div>
 <p class="blog-date">Published <%= Ecto.DateTime.to_date(@post.date) %></p>
 <div class="blog-content">
 <%= AdamczDotCom.BlogView.markdown(@post.content) %>

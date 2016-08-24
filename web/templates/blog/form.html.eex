@@ -4,13 +4,22 @@
       class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= text_input f, :date, placeholder: Ecto.DateTime.local, 
+    <%= text_input f, :date, placeholder: current_date, 
       class: "form-control" %>
   </div>
   <div class="form-group">
     <%= textarea f, :content, placeholder:
       "Some content would be good too",
       class: "form-control big-form" %>
+  </div>
+  <div class="form-group tags">
+  <%= label f, :tags, "Tags" %>
+  <% require IEx %>
+  <% IEx.pry %>
+  <%= for tag <- @tags do %>
+    <% checked = AdamczDotCom.BlogView.is_checked(tag, @changeset) %>
+    <%= checkbox :tags, "#{tag.id}", value: tag.name, checked: checked %> <%= tag.name %>
+  <% end %>
   </div>
   <div class="form-group">
   <%= radio_button f, :active, "true" %>Active<br>

@@ -14,4 +14,17 @@ defmodule AdamczDotCom.BlogView do
       "(nobody can see this post yet)"
     end
   end
+
+  def current_date() do
+    #2016-10-13 00:00:00
+    DateTime.utc_now()
+  end
+
+  def is_checked(tag, changeset) do
+    if changeset.data.tags do
+      tag.id in changeset.data.tags
+    else
+      false
+    end
+  end
 end

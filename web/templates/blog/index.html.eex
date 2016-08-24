@@ -1,5 +1,5 @@
 <h2 class="main-title">ADAM CZEREPINSKI'S BLOG</h2>
-<p>I enjoy writing because it helps to solidfy my understanding of new concepts and ideas. I hope some of what I write is useful to others as well.</p>
+<%# <p>Welcome to my blog!</p> %>
 
 <ul class="blog-index">
   <%= for post <- @posts do %>
@@ -14,6 +14,11 @@
           <%= link "EDIT", to: blog_path(@conn, :edit, post.slug) %>
         </span>
       <% end %>
+        <div class="blog-tags--horizontal">
+          <%= for tag <- post.tags do %>
+            <div class="tag <%= tag.name %>"><%= tag.name %></div>
+          <% end %>
+        </div>
     </li>
   <% end %>
 </ul>

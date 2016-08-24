@@ -1,5 +1,6 @@
 defmodule AdamczDotCom.Post do
   use AdamczDotCom.Web, :model
+  alias AdamczDotCom.Repo
 
   schema "posts" do
     field :title, :string
@@ -7,16 +8,17 @@ defmodule AdamczDotCom.Post do
     field :content, :string
     field :active, :boolean, default: false
     field :slug, :string
+    many_to_many :tags, AdamczDotCom.Tag, join_through: "posts_tags",
+      on_replace: :delete
 
     timestamps
   end
 
-  @required_fields ~w(title content)
-  @optional_fields ~w(date active slug)
-
-  def changeset(model, params \\ :empty) do
-    model
-    |> cast(params, @required_fields, @optional_fields)
+  def changeset(post, params \\ %{}) do
+    post
+    |> cast(params, [:title, :date, :content, :active, :slug])
+    |> cast_assoc(:tags)
+    |> validate_required([:title, :content])
     |> create_a_slug
   end
 
@@ -42,10 +44,12 @@ defmodule AdamczDotCom.Post do
   end
 
   def active(query) do
-    from p in query, where: p.active == true
+    from p in query, where: p.active == true,
+      preload: [:tags]
   end
 
   def sorted(query) do
     from p in query, order_by: [desc: p.date]
   end
+
 end

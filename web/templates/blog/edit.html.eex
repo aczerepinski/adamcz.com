@@ -1,3 +1,4 @@
 <h2>THIS IS WHERE YOU EDIT YOUR BLOG POSTS</h2>
 <%= render "form.html", changeset: @changeset,
+                        tags: @tags,
                         action: blog_path(@conn, :update, @post.slug) %>

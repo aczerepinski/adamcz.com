@@ -7364,78 +7364,129 @@ main pre {
 textarea.big-form {
   height: 200px; }
 
-/* line 227, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 224, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+.blog-content h3 {
+  text-transform: uppercase; }
+
+/* line 229, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+.blog-tags {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px; }
+
+/* line 236, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+.blog-tags--horizontal {
+  display: flex; }
+  /* line 238, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  .blog-tags--horizontal .tag {
+    font-size: 0.6em;
+    padding: 2px 7px; }
+
+/* line 244, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+.tag {
+  align-items: center;
+  background-color: #004819;
+  border: 1px solid #CCC;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 3px 8px; }
+  /* line 255, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  .tag.ruby {
+    background-color: #b31301; }
+  /* line 259, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  .tag.elixir {
+    background-color: #584364; }
+  /* line 263, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  .tag.phoenix {
+    background-color: #f46f37; }
+  /* line 267, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  .tag.javascript {
+    background-color: #f0da50; }
+
+/* line 276, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .blog-content pre {
   margin: 5px 25px; }
 
-/* line 231, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 280, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .blog-index {
+  padding: 0;
   text-align: center;
   list-style-type: none; }
-  /* line 234, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  /* line 284, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  .blog-index li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px; }
+  /* line 290, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
   .blog-index li a {
-    font-family: "Oswald", sans-serif; }
-    /* line 236, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+    font-family: "Oswald", sans-serif;
+    margin-left: 5px; }
+    /* line 293, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
     .blog-index li a:hover {
       text-decoration: none; }
 
-/* line 242, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 299, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .blog-index-date {
   color: #888;
   font-size: 0.75em; }
 
-/* line 247, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 304, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .dev-project {
   border: 1px #CCC solid;
   padding: 0;
   margin: 5px 15px 20px 15px; }
-  /* line 251, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  /* line 308, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
   .dev-project .embed-responsive {
     margin: 5px 5%; }
 
-/* line 256, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 313, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .dev-project-title {
   color: #004819;
   font-family: "Oswald", sans-serif;
   font-size: 1.3em;
   margin: 0; }
 
-/* line 263, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 320, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .dev-project-date {
   color: #888;
   font-size: 0.8em;
   font-family: "Oswald", sans-serif;
   margin-left: 5px; }
 
-/* line 270, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 327, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .dev-project-header {
   background-color: #fdf6e2;
   border-bottom: 1px #CCC solid;
   padding: 3px 10px; }
 
-/* line 276, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 333, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .dev-project-description {
   padding: 8px;
   font-size: 0.9em; }
 
 /* Phoenix flash messages */
-/* line 282, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 339, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 .alert:empty {
   display: none; }
 
 /* Phoenix inline forms in links and buttons */
-/* line 285, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+/* line 342, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
 form.link, form.button {
   display: inline; }
 
 @media screen and (max-width: 450px) {
-  /* line 290, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  /* line 347, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
   #navbar a {
     font-size: 1em; }
-  /* line 294, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  /* line 351, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
   footer {
     height: 30px; }
-  /* line 298, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
+  /* line 355, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/primary-styles.scss */
   svg {
     height: 15px; } }
 
