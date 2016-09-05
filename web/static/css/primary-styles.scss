@@ -221,18 +221,75 @@ textarea.big-form {
 }
 
 .blog-content {
-  
+  h3 {
+    text-transform: uppercase;
+  }
 }
+
+.blog-tags {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.blog-tags--horizontal {
+  display: flex;
+  .tag {
+    font-size: 0.6em;
+    padding: 2px 7px;
+  }
+}
+
+.tag {
+  align-items: center;
+  background-color: $forest;
+  border: 1px solid #CCC;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 3px 8px;
+
+  &.ruby {
+    background-color: #b31301;
+  }
+
+  &.elixir {
+    background-color: #584364;
+  }
+
+  &.phoenix {
+    background-color: #f46f37;
+  }
+
+  &.javascript {
+    background-color: #f0da50;
+  }
+}
+
+
+
+
 
 .blog-content pre {
   margin: 5px 25px;
 }
 
 .blog-index {
+  padding: 0;
   text-align: center;
   list-style-type: none;
+  li {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
   li a {
     font-family: $headerFont;
+    margin-left: 5px;
     &:hover {
       text-decoration: none;
     }
