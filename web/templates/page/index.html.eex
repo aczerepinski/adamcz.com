@@ -1,7 +1,5 @@
-<div class="flex-container">
-  <div class="flex-row">
-    <h1>ADAM CZEREPINSKI</h1>
-    <h3>Web Developer</h3>
-  </div>
+<div class="index__title">
+  <h1>ADAM CZEREPINSKI</h1>
+  <h3>Web Developer</h3>
 </div>
 

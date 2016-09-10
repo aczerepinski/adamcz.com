@@ -1,5 +1,5 @@
 <h2 class="main-title">DEV PROJECTS</h2>
-<p>Here are some of the personal/side projects I've enjoyed working on:</p>
+<p class="mobile-indent">Here are some of the personal/side projects I've enjoyed working on:</p>
 
 
 <!-- PRACTICE LOG -->
@@ -24,7 +24,7 @@
 <div class="dev-project">
   <div class="dev-project-header">
     <span class="dev-project-title">THIS WEBSITE!</span>
-    <span class="dev-project-date">JANUARY 2016</span>
+    <span class="dev-project-date">JANUARY 2016 - PRESENT</span>
   </div>
   <div class="dev-project-description">
     <p>

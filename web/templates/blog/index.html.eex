@@ -1,11 +1,18 @@
-<h2 class="main-title">ADAM CZEREPINSKI'S BLOG</h2>
+<h2 class="main-title">ADAM CZ'S BLOG</h2>
 <%# <p>Welcome to my blog!</p> %>
 
 <ul class="blog-index">
   <%= for post <- @posts do %>
     <li>
-      <span class="blog-index-date"><%= Ecto.DateTime.to_date(post.date) %></span>
-      <%= link String.upcase(post.title), to: blog_path(@conn, :show, post.slug) %>
+      <%= link String.upcase(post.title), class: "blog-index__title", to: blog_path(@conn, :show, post.slug) %>
+      <div class="blog-index__metdata">
+        <span class="blog-index__date"><%= Ecto.DateTime.to_date(post.date) %></span>
+        <span class="blog-tags--horizontal">
+          <%= for tag <- post.tags do %>
+            <div class="tag <%= tag.name %>"><%= tag.name %></div>
+          <% end %>
+        </span>
+      </div>
       <%= if @current_user do %>
         <span class="blog-index-date">
           <%= AdamczDotCom.BlogView.post_status(post.active) %>
@@ -14,11 +21,7 @@
           <%= link "EDIT", to: blog_path(@conn, :edit, post.slug) %>
         </span>
       <% end %>
-        <div class="blog-tags--horizontal">
-          <%= for tag <- post.tags do %>
-            <div class="tag <%= tag.name %>"><%= tag.name %></div>
-          <% end %>
-        </div>
+
     </li>
   <% end %>
 </ul>
