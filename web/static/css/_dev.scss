@@ -1,0 +1,58 @@
+$devMargin: 5px;
+
+.dev-project {
+  border: 1px #CCC solid;
+  padding: 0;
+  margin: $devMargin 15px 20px 15px;
+  .embed-responsive {
+    margin: $devMargin 5%;
+  }
+
+  iframe {
+    margin-bottom: $devMargin;
+  }
+
+  &:last-of-type {
+    margin-bottom: 4rem;
+  }
+}
+
+.dev-project-img {
+  margin-bottom: 7px;
+  img {
+    width: 100%;
+  }
+}
+
+.dev-project-title {
+  color: $forest;
+  font-family: $headerFont;
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.dev-project-date {
+  color: #888;
+  font-size: 0.8em;
+  font-family: $headerFont;
+  margin-left: $devMargin;
+}
+
+.dev-project-header {
+  background-color: $cream;
+  border-bottom: 1px #CCC solid;
+  padding: 3px 10px;
+}
+
+.dev-project-description {
+  padding: 0 8px 12px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: $mobile) {
+  .dev-project {
+    &:last-of-type {
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.bunch-of-code {
+  position: absolute;
+  top: 65px;
+  left: 15px;
+  opacity: 0.06;
+  overflow: hidden;
+}
+
+.blog-title {
+  color: $blue;
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  text-align: center;
+}
+
+.blog-date {
+  text-align: center;
+  font-size: 1em;
+  color: #666;
+}
+
+textarea.big-form {
+  height: 200px;
+}
+
+.blog-content {
+  h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: $forest;
+    font-family: oswald;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.blog-content pre {
+  margin: 5px 25px;
+}
+
+.blog-index {
+  text-align: center;
+  list-style-type: none;
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-index__title {
+    display: block;
+  }
+
+  .blog-index__metadata {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .blog-index__date {
+    color: #888;
+    font-size: 0.75em;
+  }
+
+  li a {
+    color: $forest;
+    font-family: $headerFont;
+    font-size: 1.2rem;
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+}
+
+.blog-tags {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.blog-tags--horizontal {
+  display: flex;
+  justify-content: center;
+  .tag {
+    font-size: 0.6em;
+    padding: 2px 7px;
+  }
+}
+
+.tag {
+  align-items: center;
+  background-color: $forest;
+  border: 1px solid #CCC;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 3px 8px;
+
+  &.ruby {
+    background-color: #b31301;
+  }
+
+  &.elixir {
+    background-color: #584364;
+  }
+
+  &.phoenix {
+    background-color: #f46f37;
+  }
+
+  &.javascript {
+    background-color: #f0da50;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  code {
+    font-size: 0.8rem;
+  }
+}

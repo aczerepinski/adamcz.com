@@ -1,0 +1,49 @@
+body {
+  height: 100%;
+}
+
+.main {
+  margin: $headerHeight;
+  padding: 1em 0 0 0;
+
+  .main-title {
+    color: $blue;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+
+/* primary styles */
+
+.form-control {
+  border-radius: 0;
+  font-family: $primaryFont;
+}
+
+/* Phoenix flash messages */
+.alert:empty { display: none; }
+
+/* Phoenix inline forms in links and buttons */
+form.link, form.button {
+  display: inline;
+}
+
+
+@media screen and (max-width: $mobile) {
+  .main {
+    margin: 0.5rem 0.5rem $headerHeight;
+    padding: 0 0.2rem 0.2rem;
+  }
+
+  .mobile-indent {
+    margin-left: $headerHeight;
+    min-height: 3rem;
+  }
+}
+
+@media only screen and (min-width: $hugeDesktop) {
+  .main {
+    margin: $headerHeight 10%;
+  }
+}

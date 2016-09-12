@@ -4,43 +4,43 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <%# <link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro|Oswald' rel='stylesheet' type='text/css'> %>
+    <meta name="description" content="website of web developer and composer Adam Czerepinski">
+    <meta name="author" content="Adam Czerepinski">
     <title>Adam Czerepinski</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro|Oswald" rel="stylesheet">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
 
-    <nav role="navigation" class="navbar navbar-default navbar-static-top" id="navbar">
-      <div class="container">
-        <div class="navbar-header">
-        
-          <a href="/" class="navbar-brand" id="logo">CZ</a>
-          <ul class="nav navbar-nav">
-            <li><%= link "ABOUT", to: page_path(@conn, :about) %></li>
-            <li><%= link "DEV", to: page_path(@conn, :dev) %></li>
-            <li><%= link "MUSIC", to: page_path(@conn, :music) %></li>
-            <li><%= link "BLOG", to: blog_path(@conn, :index) %></li>
-            <%= if @current_user do %>
-            <li><%= link "LOGOUT", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
-        <% end %>
-          </ul>
-        </div> <!-- /navbar-header -->
-      </div> <!-- /container --> 
+    <nav role="navigation" class="navbar">
+      <div class="navbar__logo">
+        <a class="navbar__link" href="/">CZ</a>
+      </div>
+      <div class="navbar__links">
+        <ul>
+          <li><%= link "ABOUT", class: "navbar__link", to: page_path(@conn, :about) %></li>
+          <li><%= link "DEV", class: "navbar__link", to: page_path(@conn, :dev) %></li>
+          <li><%= link "MUSIC", class: "navbar__link", to: page_path(@conn, :music) %></li>
+          <li><%= link "BLOG", class: "navbar__link", to: blog_path(@conn, :index) %></li>
+          <%= if @current_user do %>
+          <li><%= link "LOGOUT", class: "navbar__link", to: session_path(@conn, :delete, @current_user), method: "delete" %></li>
+          <% end %>
+        </ul>
+      </div>
     </nav>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
 
-      <main role="main">
+      <main role="main" class="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
 
     </div> <!-- /container -->
     <footer class="footer">
-      <div class="flex-container footer-icons">
+      <div class="footer__icons">
+        <a class="footer__link--home" href="/">CZ</a>
       <!-- entypo icons by Daniel Bruce www.entypo.com -->
 
         <a href="https://github.com/aczerepinski" target="_blank">
@@ -85,7 +85,7 @@
             </svg>
           </div>
         </a>
-      </div> <!-- /flex-container -->
+      </div>
     </footer>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>

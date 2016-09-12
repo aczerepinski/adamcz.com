@@ -1,0 +1,34 @@
+.btn {
+  padding: 4px 8px;
+  margin-bottom: 1px;
+}
+
+.btn-cz {
+  border: $borderWidth solid $forest;
+  border-radius: 0;
+  background-color: $cream;
+  color: $forest;
+  font-family: $headerFont;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.btn-project {
+  border: 1px solid #CCC;
+  border-radius: 0;
+  color: $forest;
+  font-family: $headerFont;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.btn-project.btn-inactive {
+  background-color: #fff;
+  color: #CCC;
+  &:hover {
+    color: #CCC;
+  }
+}
+
