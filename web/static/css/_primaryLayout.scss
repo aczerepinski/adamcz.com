@@ -11,6 +11,10 @@ body {
     font-size: 2rem;
     text-align: center;
   }
+
+  .index__title {
+    text-align: center;
+  }
 }
 
 
@@ -34,6 +38,9 @@ form.link, form.button {
   .main {
     margin: 0.5rem 0.5rem $headerHeight;
     padding: 0 0.2rem 0.2rem;
+    .main-title {
+      font-size: 1.75rem;
+    }
   }
 
   .mobile-indent {
