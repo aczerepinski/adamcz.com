@@ -18,7 +18,7 @@ $devMargin: 5px;
 }
 
 .dev-project-img {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   img {
     width: 100%;
   }
@@ -47,6 +47,20 @@ $devMargin: 5px;
 .dev-project-description {
   padding: 0 8px 12px;
   font-size: 0.9em;
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+  span {
+    background-color: $cream;
+    border: 1px solid #CCC;
+    color: $blue;
+    padding: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: $mobile) {

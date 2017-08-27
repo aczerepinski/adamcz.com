@@ -1,36 +1,38 @@
 <h2 class="main-title">DEV PROJECTS</h2>
-<p class="mobile-indent">Here are some of the personal/side projects I've enjoyed working on:</p>
+<p class="mobile-indent">Here are some of the personal/side projects that I build for fun:</p>
 
-
-<!-- PRACTICE LOG -->
+<!-- DBMAJ7.COM -->
 <div class="dev-project">
   <div class="dev-project-header">
-    <span class="dev-project-title">PRACTICE LOG</span>
-    <span class="dev-project-date">MARCH 2016 - PRESENT</span>
+    <span class="dev-project-title">DbMaj7</span>
+    <span class="dev-project-date">2017 - PRESENT</span>
   </div>
   <div class="dev-project-description">
     <p>
-     Practice Log is a resource for musicians to set goals and track their practice activity. It's a React/Redux app running on an Elixir/Phoenix/PostgreSQL backend.
+     DbMaj7 is a website that I build & maintain to stay connected to music education. It's a collection of resources and articles that help musicians level up their knowledge and craftsmanship.
     </p>
-    <div class="dev-project-img">
-      <img src="/images/practice-log.jpg"/>
+    <div class="tech-stack">
+      <span>Go</span><span>JavaScript</span><span>React</span><span>React-Router</span><span>Styled-Components</span><span>PostgreSQL</span>
     </div>
-   <button class="btn btn-project btn-inactive">COMING SOON</button>
+    <a href="http://www.dbmaj7.com/" class="btn btn-project" role="button" target="_blank">VISIT THE SITE</a>
+    <a href="https://github.com/aczerepinski/dbmaj7" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
   </div>
 </div>
-
 
 <!-- ADAMCZ.COM -->
 <div class="dev-project">
   <div class="dev-project-header">
-    <span class="dev-project-title">THIS WEBSITE!</span>
-    <span class="dev-project-date">JANUARY 2016 - PRESENT</span>
+    <span class="dev-project-title">ADAMCZ.COM</span>
+    <span class="dev-project-date">2016 - PRESENT</span>
   </div>
   <div class="dev-project-description">
     <p>
-     This website - meaning adamcz.com - is an Elixir/Phoenix application. I built it to give myself a self-hosted blogging platform, and to get my feet wet with the Elixir programming language.
+     This website - meaning adamcz.com - is the first project I built with Elixir and Phoenix. It's a simple self-hosted blogging platform, and an excuse to spend some time with one of my very favorite programming languages.
     </p>
-    <a href="https://github.com/aczerepinski/adamcz_dot_com" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
+    <div class="tech-stack">
+      <span>Elixir</span><span>Phoenix</span><span>Ecto</span><span>PostgreSQL</span>
+    </div>
+    <a href="https://github.com/aczerepinski/adamcz.com" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
   </div>
 </div>
 
@@ -42,13 +44,14 @@
     <span class="dev-project-date">JULY 2015</span>
   </div>
   <div class="dev-project-description">
-    <p>
-     Jazz Robot is a Ruby/Rails app that facilitates learning to play songs in all 12 musical keys. The app offers a collection of songs that can be filtered by difficulty or composer, and transposed into any desired key (or into raw functional analysis). It also includes a client-side educational game that helps users learn the relationships between keys and chords. I blogged about the song index's filtering UI <%= link "here", to: blog_path(@conn, :index) %>. 
+  <p>Jazz Robot is a Ruby/Rails app that facilitates learning to play songs in all 12 musical keys. The site has been retired so that I could focus my attention (and hosting fees) on dbmaj7.com. I still love this app as one of my first attempts at building software for music education. 
     </p>
+    <div class="tech-stack">
+      <span>Ruby</span><span>Rails</span><span>JavaScript</span><span>PostgreSQL</span>
+    </div>
     <div class="dev-project-img">
       <img src="/images/jazzrobot.jpg"/>
     </div>
-    <a href="https://jazzrobot.herokuapp.com/" class="btn btn-project" role="button" target="_blank">VISIT THE SITE</a>
     <a href="https://github.com/aczerepinski/jazz_robot" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
   </div>
 </div>

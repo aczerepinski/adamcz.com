@@ -1,11 +1,13 @@
 <h2 class="main-title">ABOUT</h2>
 
-<p class="mobile-indent">Welcome to my website! I'm a web developer from Wisconsin, currently living in Massachusetts with my wife and son.</p>
+<p class="mobile-indent">Welcome to my website! I’m a full stack web developer from Wisconsin, currently living in Massachusetts with my wife and son.</p>
 
-<p>I work at America's Test Kitchen, where I build engaging food & recipe websites with JavaScript, React, Redux, Elixir, Phoenix, Ruby and Rails. Prior to that, I worked at Geisel Software, where I built "Internet of Things" projects with Python, JavaScript and PHP.</p>
+<p>I currently work at America's Test Kitchen, where I help build and maintain a portfolio of food and recipe websites including americastestkitchen.com, cookscountry.com, cooksillustrated.com, cooksscience.com, and onlinecookingschool.com. Prior to that, I worked at Geisel Software, a consultancy specializing in Internet of Things & embedded development.</p>
+
+<p>I especially enjoy building responsive, highly interactive front ends with JavaScript & React, and services/APIs in Elixir or Go. I also have written production code in Ruby, Python and PHP, and always enjoy learning new programming languages.</p>
 
 <p>Outside of programming, I'm passionate about jazz music. I have degrees from Berklee College of Music and Manhattan School of Music, and used to work as a jazz trumpet player and composer. I don't play professionally any longer but I still hold a deep love for jazz music and listen to a lot of it while I code.</p>
 
-<p>If you'd like to contact me, send an email to aczerepinski at google's email service, or use any of the social media links on this page. Thanks for visiting!</p>
+<p>If you'd like to contact me, send an email to  aczerepinski at google's email service, or use any of the social media links on this page. Thanks for visiting!</p>
 
 <p>-Adam</p>
