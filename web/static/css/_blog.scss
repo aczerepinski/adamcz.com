@@ -1,3 +1,8 @@
+code {
+  background-color: $cream;
+  color: $forest;
+}
+
 .bunch-of-code {
   position: absolute;
   top: 65px;
@@ -24,6 +29,7 @@ textarea.big-form {
 }
 
 .blog-content {
+  padding-bottom: 2rem;
   h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
