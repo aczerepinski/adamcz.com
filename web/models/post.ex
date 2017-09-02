@@ -44,8 +44,7 @@ defmodule AdamczDotCom.Post do
   end
 
   def active(query) do
-    from p in query, where: p.active == true,
-      preload: [:tags]
+    from p in query, where: p.active == true
   end
 
   def sorted(query) do

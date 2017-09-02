@@ -6,19 +6,20 @@ defmodule AdamczDotCom.BlogController do
   def index(conn, _params) do
     posts = if conn.assigns.current_user do
       Repo.all(Post)
-      |> Repo.preload(:tags)
+      |> Repo.preload([tags: (from t in Tag, order_by: t.name)])
     else
       Post
       |> Post.active
       |> Post.sorted
       |> Repo.all
+      |> Repo.preload([tags: (from t in Tag, order_by: t.name)])
     end
     render conn, "index.html", posts: posts
   end
 
   def show(conn, %{"slug" => slug}) do
     post = Repo.get_by(Post, slug: slug)
-      |> Repo.preload(:tags)
+      |> Repo.preload([tags: (from t in Tag, order_by: t.name)])
     if !post.active do
       conn
       |> authenticate({})
