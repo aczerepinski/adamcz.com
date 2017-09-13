@@ -27,10 +27,10 @@
   </div>
   <div class="dev-project-description">
     <p>
-     This website - meaning adamcz.com - is the first project I built with Elixir and Phoenix. It's a simple self-hosted blogging platform, and an excuse to spend some time with one of my very favorite programming languages.
+     This website - meaning adamcz.com - is the first project I built with Elixir and Phoenix. It's a simple self-hosted blogging platform, and an excuse to spend some time with amazing functional languages like Elixir and Elm.
     </p>
     <div class="tech-stack">
-      <span>Elixir</span><span>Phoenix</span><span>Ecto</span><span>PostgreSQL</span>
+      <span>Elixir</span><span>Phoenix</span><span>Ecto</span><span>PostgreSQL</span><span>Elm</span>
     </div>
     <a href="https://github.com/aczerepinski/adamcz.com" class="btn btn-project" role="button" target="_blank">VIEW THE CODE</a>
   </div>

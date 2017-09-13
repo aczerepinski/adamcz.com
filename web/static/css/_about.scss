@@ -1,0 +1,117 @@
+.about {
+
+  &__content {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-top: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    min-height: 400px;
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .favorites {
+    margin-top: 1rem;
+  }
+
+  .favorite {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    &__detail {
+      flex: 1;
+      font-family: $primaryFont;
+      margin-left: .5rem;
+    }
+
+    &__icon {
+      width: 30px;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__title {
+      color: $blue;
+      font-family: $headerFont;
+      margin-bottom: .5rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .map-wrapper {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+  }
+
+  #map-goes-here {
+    border: 1px solid $forest;
+    height: 80%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .topic {
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    color: $forest;
+    display: flex;
+    flex: 1 1 50%;
+    font-family: $headerFont;
+    justify-content: center;
+    text-transform: uppercase;
+    &:hover {
+      background-color: #fafafa;
+      color: $blue;
+    }
+    &--active {
+      background-color: $cream;
+      border: 1px solid #ccc;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        background-color: $cream;
+        color: $forest;
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobile) {
+    &__content {
+      margin-bottom: 2rem;
+    }
+
+    .favorite {
+      &__detail {
+        font-size: .8rem;
+      }
+    }
+
+    .main-title {
+      margin: 2rem;
+    }
+
+    &__topics {
+      height: 2rem;
+    }
+
+    .topic {
+      font-size: .8rem;
+    }
+  }
+}
