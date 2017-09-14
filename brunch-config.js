@@ -42,6 +42,7 @@ exports.config = {
       "deps/phoenix/web/static",
       "deps/phoenix_html/web/static",
       "web/static",
+      "web/elm",
       "test/static"
     ],
 
@@ -54,6 +55,11 @@ exports.config = {
     babel: {
       // Do not use ES6 compiler in vendor code
       ignore: [/web\/static\/vendor/]
+    },
+    elmBrunch: {
+      elmFolder: 'web/elm',
+      mainModules: ['Main.elm'],
+      outputFolder: '../static/js',
     },
     sass: {
       options: {
