@@ -24,6 +24,7 @@ defmodule AdamczDotCom.Router do
     get "/about", PageController, :about
     get "/dev", PageController, :dev
     get "/music", PageController, :music
+    get "/resume", PageController, :resume
     get "/", PageController, :index
   end
 

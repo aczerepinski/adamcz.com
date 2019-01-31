@@ -1,5 +1,4 @@
-<h2 class="main-title">ADAM CZ'S BLOG</h2>
-<%# <p>Welcome to my blog!</p> %>
+<h2 class="main-title">Blog</h2>
 
 <ul class="blog-index">
   <%= for post <- @posts do %>

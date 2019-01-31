@@ -15,7 +15,7 @@ favoriteTech : List Favorite
 favoriteTech =
     [ { icon = "/images/ruby100.png"
       , title = "Ruby"
-      , detail = "Ruby was my first programming language. When I was deciding which language to start with, I was especially drawn to Ruby's elegant syntax and expressive naming conventions. I don't write much Ruby anymore, but my early exposure to the Ruby community informs the way I write code in general. In particular, Ruby exposed me to great books and talks by object oriented gurus like Sandi Metz, Martin Fowler, and Bob Martin."
+      , detail = "Ruby was my first programming language. When I was deciding which language to start with, I was especially drawn to Ruby's elegant syntax and expressive naming conventions. My early exposure to the Ruby community informs the way I write code in all languages - in particular, Ruby exposed me to great books and talks by object oriented gurus like Sandi Metz, Martin Fowler, and Bob Martin."
       }
     , { icon = "/images/elixir100.png"
       , title = "Elixir"
@@ -27,11 +27,11 @@ favoriteTech =
       }
     , { icon = "/images/go100.png"
       , title = "Go"
-      , detail = "Go is the first typed language I learned, and I really enjoy how much freedom and confidence the type system lends to code refactoring. I also love that Go conference speakers and book/blog authors have gotten me more familiar with the lower-level underpinnings of the code I write."
+      , detail = "Go is the first typed language I learned, and I really enjoy the type system when it comes time to refactor. Go is probably the best language I've ever used for writing dependency-free code with just the standard library. Go test suites are blazingly, addictingly fast."
       }
     , { icon = "/images/elm100.png"
       , title = "Elm"
-      , detail = "Elm hit my radar when I heard Dan Abramov mention it as an inspiration for Redux. Elm pulls together the best features from other languages I love; functional purity, a really nice type system, and a declarative approach to building UIs."
+      , detail = "I haven't written any production Elm yet (unless you count this page) but it's been a fun language to play with on the side. It rolls some of my favorite features from Elixir, Go, and React into one cohesive package."
       }
     ]
 

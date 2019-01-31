@@ -8815,7 +8815,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 var _user$project$Bio$bio = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	{ctor: '[]'},
-	'\nWelcome to my website! I’m a full stack web developer from Wisconsin, currently living in Massachusetts with my wife and son.\n\nI work at America\'s Test Kitchen, where I help build and maintain a portfolio of food and recipe websites including americastestkitchen.com, cookscountry.com, cooksillustrated.com, cooksscience.com, and onlinecookingschool.com. Prior to that, I worked at Geisel Software; a consultancy specializing in Internet of Things & embedded development.\n\nI especially enjoy building responsive, highly interactive front ends with JavaScript/React or Elm, and services/APIs in Elixir or Go. I also have written production code in Ruby, Python and PHP, and always enjoy learning new programming languages.\n\nOutside of programming, I\'m passionate about jazz music. I hold a doctorate from the Manhattan School of Music, and used to work as a jazz trumpet player and composer. I don\'t play professionally any longer but I still hold a deep love for jazz music and listen to a lot of it while I code.\n\nIf you\'d like to contact me, send an email to  aczerepinski at google\'s email service, or use any of the social media links on this page. Thanks for visiting!\n\nAdam\n');
+	'\nWelcome to my website! I’m a software engineer from Wisconsin, currently living in Massachusetts with my wife and son.\n\nI work at America\'s Test Kitchen, where I help build and maintain a portfolio of food and recipe websites including americastestkitchen.com, cookscountry.com, cooksillustrated.com, and onlinecookingschool.com. Prior to that, I worked at Geisel Software; a consultancy specializing in Internet of Things & embedded development. I enjoy learning new programming languags and have written production code in quite a few of them (Go, Elixir, Ruby, JavaScript, Python, PHP).\n\nOutside of programming, I\'m passionate about jazz music. I hold a doctorate from the Manhattan School of Music, and used to work as a jazz trumpet player and composer. I don\'t play professionally any longer but I still hold a deep love for jazz music and listen to a lot of it while I code.\n\nIf you\'d like to contact me, send an email to  aczerepinski at google\'s email service, or use any of the social media links on this page. Thanks for visiting!\n\nAdam\n');
 var _user$project$Bio$render = _user$project$Bio$bio;
 
 var _user$project$Favorites$renderFavorite = function (favorite) {
@@ -8929,7 +8929,7 @@ var _user$project$Favorites$favoriteMusic = {
 var _user$project$Favorites$music = _user$project$Favorites$renderFavorites(_user$project$Favorites$favoriteMusic);
 var _user$project$Favorites$favoriteTech = {
 	ctor: '::',
-	_0: {icon: '/images/ruby100.png', title: 'Ruby', detail: 'Ruby was my first programming language. When I was deciding which language to start with, I was especially drawn to Ruby\'s elegant syntax and expressive naming conventions. I don\'t write much Ruby anymore, but my early exposure to the Ruby community informs the way I write code in general. In particular, Ruby exposed me to great books and talks by object oriented gurus like Sandi Metz, Martin Fowler, and Bob Martin.'},
+	_0: {icon: '/images/ruby100.png', title: 'Ruby', detail: 'Ruby was my first programming language. When I was deciding which language to start with, I was especially drawn to Ruby\'s elegant syntax and expressive naming conventions. My early exposure to the Ruby community informs the way I write code in all languages - in particular, Ruby exposed me to great books and talks by object oriented gurus like Sandi Metz, Martin Fowler, and Bob Martin.'},
 	_1: {
 		ctor: '::',
 		_0: {icon: '/images/elixir100.png', title: 'Elixir', detail: 'Elixir is a beautiful functional language. I was first exposed to functional programming through Brian Lonsdorf\'s \"Mostly Adequate\" JavaScript book and talks, and I chose Elixir to more deeply explore the paradigm. Elixir\'s pattern matching, macros, and pipes enable really enjoyable ways to write code.'},
@@ -8938,10 +8938,10 @@ var _user$project$Favorites$favoriteTech = {
 			_0: {icon: '/images/react100.png', title: 'React', detail: 'React\'s declarative approach to UI rendering was a breath of fresh air compared to the direct DOM manipulation that I had been doing previously. I love how quickly the framework gets out of the way, and allows me to get everything done with plain-old JavaScript.'},
 			_1: {
 				ctor: '::',
-				_0: {icon: '/images/go100.png', title: 'Go', detail: 'Go is the first typed language I learned, and I really enjoy how much freedom and confidence the type system lends to code refactoring. I also love that Go conference speakers and book/blog authors have gotten me more familiar with the lower-level underpinnings of the code I write.'},
+				_0: {icon: '/images/go100.png', title: 'Go', detail: 'Go is the first typed language I learned, and I really enjoy the type system when it comes time to refactor. Go is probably the best language I\'ve ever used for writing dependency-free code with just the standard library. Go test suites are blazingly, addictingly fast.'},
 				_1: {
 					ctor: '::',
-					_0: {icon: '/images/elm100.png', title: 'Elm', detail: 'Elm hit my radar when I heard Dan Abramov mention it as an inspiration for Redux. Elm pulls together the best features from other languages I love; functional purity, a really nice type system, and a declarative approach to building UIs.'},
+					_0: {icon: '/images/elm100.png', title: 'Elm', detail: 'I haven\'t written any production Elm yet (unless you count this page) but it\'s been a fun language to play with on the side. It rolls some of my favorite features from Elixir, Go, and React into one cohesive package.'},
 					_1: {ctor: '[]'}
 				}
 			}
@@ -9104,7 +9104,7 @@ var _user$project$Main$view = function (model) {
 				},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('ABOUT ADAM CZEREPINSKI'),
+					_0: _elm_lang$html$Html$text('About Adam Czerepinski'),
 					_1: {ctor: '[]'}
 				}),
 			_1: {

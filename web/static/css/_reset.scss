@@ -19,6 +19,22 @@ h4, p, a, li {
   font-family: $primaryFont;
 }
 
+h5 {
+  color: $forest;
+  font-family: $headerFont;
+  font-size: 1.25rem;
+  letter-spacing: .75px;
+  margin: 0;
+}
+
+h6 {
+  color: $blue;
+  font-family: $headerFont;
+  font-size: 1rem;
+  letter-spacing: .75px;
+  margin: 1.25rem 0 .5rem;
+}
+
 a {
   transition: all .2s linear;
 }
