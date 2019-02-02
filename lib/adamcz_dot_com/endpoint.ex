@@ -7,10 +7,10 @@ defmodule AdamczDotCom.Endpoint do
 
   # Serve at "/" the static files from "priv/static" directory.
   #
-  # You should set gzip to true if you are running phoenix.digest
+  # You should set gzip to true if you are running phx.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :adamcz_dot_com, gzip: false,
+    at: "/", from: :adamcz_dot_com, gzip: true,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
