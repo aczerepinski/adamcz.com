@@ -5,7 +5,7 @@
     <li>
       <%= link String.upcase(post.title), class: "blog-index__title", to: blog_path(@conn, :show, post.slug) %>
       <div class="blog-index__metdata">
-        <span class="blog-index__date"><%= Ecto.DateTime.to_date(post.date) %></span>
+        <span class="blog-index__date"><%= NaiveDateTime.to_date(post.date) %></span>
         <span class="blog-tags--horizontal">
           <%= for tag <- post.tags do %>
             <div class="tag <%= tag.name %>"><%= tag.name %></div>

@@ -1,17 +1,16 @@
 defmodule AdamczDotCom.Post do
   use AdamczDotCom.Web, :model
-  alias AdamczDotCom.Repo
 
   schema "posts" do
     field :title, :string
-    field :date, Ecto.DateTime
+    field :date, :naive_datetime
     field :content, :string
     field :active, :boolean, default: false
     field :slug, :string
     many_to_many :tags, AdamczDotCom.Tag, join_through: "posts_tags",
       on_replace: :delete
 
-    timestamps
+    timestamps()
   end
 
   def changeset(post, params \\ %{}) do

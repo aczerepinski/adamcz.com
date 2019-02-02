@@ -5,11 +5,8 @@ defmodule AdamczDotCom.User do
     field :username, :string
     field :password_hash, :string
     field :password, :string, virtual: true
-    timestamps
+    timestamps()
   end
-
-  @required_fields ~w(username)
-  @optional_fields ~w(password)
 
   @doc """
   Creates a changeset based on the `model` and `params`.

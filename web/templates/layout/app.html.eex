@@ -19,7 +19,6 @@
       </div>
       <div class="navbar__links">
         <ul>
-          <li><%= link "ABOUT", class: "navbar__link", to: page_path(@conn, :about) %></li>
           <li><%= link "RESUME", class: "navbar__link", to: page_path(@conn, :resume) %></li>
           <li><%= link "MUSIC", class: "navbar__link", to: page_path(@conn, :music) %></li>
           <li><%= link "BLOG", class: "navbar__link", to: blog_path(@conn, :index) %></li>

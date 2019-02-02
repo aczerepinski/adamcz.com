@@ -16,7 +16,7 @@
     <h6>America's Test Kitchen - Boston, MA (Remote)</h6>
     <p class="sub-heading">Software Engineer, March 2018 - Present</p>
     <p class="sub-heading">Associate Software Engineer, May 2016 - March 2018</p>
-    <p>At America's Test Kitchen, I build and maintain a portfolio of food and recipe websites, including americastestkitchen.com, cookscountry.com, cooksillustrated.com, and onlinecookingschool.com. Our tech stack varies based on each project's needs, but often includes Go, JavaScript, Ruby/Rails, Elixir/Phoenix, React/Redux, PostgreSQL, NGINX, Memcached, Redis.</p>
+    <p>At America's Test Kitchen, I build and maintain a portfolio of food and recipe websites, including americastestkitchen.com, cookscountry.com, cooksillustrated.com, and onlinecookingschool.com. Our tech stack varies per project, including Go, JavaScript, Ruby/Rails, Elixir/Phoenix, React/Redux, PostgreSQL, NGINX, Memcached, Redis.</p>
 
     <h6>Geisel Software, Inc. - Shrewsbury, MA</h6>
     <p class="sub-heading">Software Engineer, August 2015 - April 2016</p>
