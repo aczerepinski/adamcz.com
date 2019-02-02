@@ -16,4 +16,8 @@ defmodule AdamczDotCom.PageController do
   def music(conn, _params) do
     render conn, "music.html"
   end
+
+  def resume(conn, _params) do
+    render conn, "resume.html"
+  end
 end

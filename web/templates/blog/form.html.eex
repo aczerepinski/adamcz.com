@@ -4,7 +4,7 @@
       class: "form-control" %>
   </div>
   <div class="form-group">
-    <%= text_input f, :date, placeholder: current_date, 
+    <%= text_input f, :date, placeholder: current_date(), 
       class: "form-control" %>
   </div>
   <div class="form-group">
@@ -14,8 +14,6 @@
   </div>
   <div class="form-group tags">
   <%= label f, :tags, "Tags" %>
-  <% require IEx %>
-  <% IEx.pry %>
   <%= for tag <- @tags do %>
     <% checked = AdamczDotCom.BlogView.is_checked(tag, @changeset) %>
     <%= checkbox :tags, "#{tag.id}", value: tag.name, checked: checked %> <%= tag.name %>

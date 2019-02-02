@@ -1,14 +1,16 @@
 defmodule AdamczDotCom.Endpoint do
   use Phoenix.Endpoint, otp_app: :adamcz_dot_com
 
-  socket "/socket", AdamczDotCom.UserSocket
+  socket "/socket", AdamczDotCom.UserSocket,
+    websocket: true,
+    longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
   #
-  # You should set gzip to true if you are running phoenix.digest
+  # You should set gzip to true if you are running phx.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :adamcz_dot_com, gzip: false,
+    at: "/", from: :adamcz_dot_com, gzip: true,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -25,7 +27,7 @@ defmodule AdamczDotCom.Endpoint do
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
     pass: ["*/*"],
-    json_decoder: Poison
+    json_decoder: Phoenix.json_library()
 
   plug Plug.MethodOverride
   plug Plug.Head

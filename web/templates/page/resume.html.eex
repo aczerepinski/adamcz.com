@@ -1,0 +1,37 @@
+<div class="resume__wrapper">
+  <div class="resume__main">
+    <h2 class="resume__name">Adam Czerepinski</h2>
+    <h5 class="resume__title">Software Engineer</h5>
+
+    <h5>Summary</h5>
+    <p>I'm a software engineer with experience translating business requirements and objectives into fully-realized solutions. I build web applications, services, and APIs with robust test coverage, carefully considered architectures, and empathy for the end user.</p>
+
+    <h5>Languages</h5>
+    <p>Go, JavaScript, Ruby, Elixir, Python, PHP</p>
+
+    <h5>Frameworks, Libraries, Other Skills</h5>
+    <p>Rails, Phoenix, Flask, Codeigniter, React, Cobra, PostgreSQL, MySQL, SQLite, Memcached, NGINX, Git, Bash, Webpack, HTML, CSS, Sass, TDD</p>
+
+    <h5>Experience</h5>
+    <h6>America's Test Kitchen - Boston, MA (Remote)</h6>
+    <p class="sub-heading">Software Engineer, March 2018 - Present</p>
+    <p class="sub-heading">Associate Software Engineer, May 2016 - March 2018</p>
+    <p>At America's Test Kitchen, I build and maintain a portfolio of food and recipe websites, including americastestkitchen.com, cookscountry.com, cooksillustrated.com, and onlinecookingschool.com. Our tech stack varies per project, including Go, JavaScript, Ruby/Rails, Elixir/Phoenix, React/Redux, PostgreSQL, NGINX, Memcached, Redis.</p>
+
+    <h6>Geisel Software, Inc. - Shrewsbury, MA</h6>
+    <p class="sub-heading">Software Engineer, August 2015 - April 2016</p>
+    <p>Geisel Software is a consultancy specializing in Internet of Things & embedded development. I primarily worked for a client that was developing an IoT device in the healthcare space. I developed a web application used to administer and support their devices (PHP/Codeigniter/MySQL), and contributed to the device's touch screen UI (Python/Flask/JavaScript).</p>
+
+    <h6>Flatiron School - New York, NY</h6>
+    <p class="sub-heading">Web Development Immersive March 2015 - June 2015</p>
+    <p>Flatiron School's immersive program included one month of independent "pre-work" and three months on-site at their Manhattan location. The curriculum spanned full stack web development, including Ruby, Rails, Sinatra, HTML, CSS, SQL, Git, JavaScript, jQuery, and object oriented design patterns.</p>
+
+    <h5>Education</h5>
+    <h6>Manhattan School of Music - New York, NY</h6>
+    <p class="sub-heading">Doctor of Musical Arts, Jazz Arts Advancement (2009)</p>
+    <p class="sub-heading">Master of Music, Jazz Performance (2004)</p>
+    <h6>Berklee College of Music - Boston, MA</h6>
+    <p class="sub-heading mb-lg">Bachelor of Music, Jazz Composition (2002)</p>
+  </div>
+</div>
+

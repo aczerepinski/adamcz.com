@@ -5,7 +5,7 @@
     <div class="tag <%= tag.name %>"><%= tag.name %></div>
     <% end %>
   </div>
-<p class="blog-date">Published <%= Ecto.DateTime.to_date(@post.date) %></p>
+<p class="blog-date">Published <%= NaiveDateTime.to_date(@post.date) %></p>
 </div>
 <div class="blog-content">
 <%= AdamczDotCom.BlogView.markdown(@post.content) %>

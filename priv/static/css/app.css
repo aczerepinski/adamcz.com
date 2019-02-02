@@ -1,501 +1,105 @@
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
- */
-/* line 9, node_modules/normalize.css/normalize.css */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  line-height: 1.15;
-  /* 2 */
-  -ms-text-size-adjust: 100%;
-  /* 3 */
-  -webkit-text-size-adjust: 100%;
-  /* 3 */ }
-
-/**
- * Remove the margin in all browsers (opinionated).
- */
-/* line 20, node_modules/normalize.css/normalize.css */
-body {
-  margin: 0; }
-
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
- */
-/* line 33, node_modules/normalize.css/normalize.css */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  /* 1 */
-  display: block; }
-
-/**
- * Add the correct display in IE 9-.
- */
-/* line 52, node_modules/normalize.css/normalize.css */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block; }
-
-/**
- * Add the correct display in iOS 4-7.
- */
-/* line 63, node_modules/normalize.css/normalize.css */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-/* line 72, node_modules/normalize.css/normalize.css */
-progress {
-  vertical-align: baseline; }
-
-/**
- * Add the correct display in IE 10-.
- * 1. Add the correct display in IE.
- */
-/* line 81, node_modules/normalize.css/normalize.css */
-template,
-[hidden] {
-  display: none; }
-
-/* Links
-   ========================================================================== */
-/**
- * 1. Remove the gray background on active links in IE 10.
- * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
- */
-/* line 94, node_modules/normalize.css/normalize.css */
-a {
-  background-color: transparent;
-  /* 1 */
-  -webkit-text-decoration-skip: objects;
-  /* 2 */ }
-
-/**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-/* line 104, node_modules/normalize.css/normalize.css */
-a:active,
-a:hover {
-  outline-width: 0; }
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the bottom border in Firefox 39-.
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-/* line 117, node_modules/normalize.css/normalize.css */
-abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */ }
-
-/**
- * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
- */
-/* line 127, node_modules/normalize.css/normalize.css */
-b,
-strong {
-  font-weight: inherit; }
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-/* line 136, node_modules/normalize.css/normalize.css */
-b,
-strong {
-  font-weight: bolder; }
-
-/**
- * Add the correct font style in Android 4.3-.
- */
-/* line 145, node_modules/normalize.css/normalize.css */
-dfn {
-  font-style: italic; }
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-/* line 154, node_modules/normalize.css/normalize.css */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/**
- * Add the correct background and color in IE 9-.
- */
-/* line 163, node_modules/normalize.css/normalize.css */
-mark {
-  background-color: #ff0;
-  color: #000; }
-
-/**
- * Add the correct font size in all browsers.
- */
-/* line 172, node_modules/normalize.css/normalize.css */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-/* line 181, node_modules/normalize.css/normalize.css */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-/* line 189, node_modules/normalize.css/normalize.css */
-sub {
-  bottom: -0.25em; }
-
-/* line 193, node_modules/normalize.css/normalize.css */
-sup {
-  top: -0.5em; }
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10-.
- */
-/* line 204, node_modules/normalize.css/normalize.css */
-img {
-  border-style: none; }
-
-/**
- * Hide the overflow in IE.
- */
-/* line 212, node_modules/normalize.css/normalize.css */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-/* line 224, node_modules/normalize.css/normalize.css */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */ }
-
-/**
- * Add the correct margin in IE 8.
- */
-/* line 236, node_modules/normalize.css/normalize.css */
-figure {
-  margin: 1em 40px; }
-
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-/* line 245, node_modules/normalize.css/normalize.css */
-hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */ }
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change font properties to `inherit` in all browsers (opinionated).
- * 2. Remove the margin in Firefox and Safari.
- */
-/* line 259, node_modules/normalize.css/normalize.css */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
-  /* 1 */
-  margin: 0;
-  /* 2 */ }
-
-/**
- * Restore the font weight unset by the previous rule.
- */
-/* line 272, node_modules/normalize.css/normalize.css */
-optgroup {
-  font-weight: bold; }
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-/* line 281, node_modules/normalize.css/normalize.css */
-button,
-input {
-  /* 1 */
-  overflow: visible; }
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-/* line 291, node_modules/normalize.css/normalize.css */
-button,
-select {
-  /* 1 */
-  text-transform: none; }
-
-/**
- * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
- *    controls in Android 4.
- * 2. Correct the inability to style clickable types in iOS and Safari.
- */
-/* line 302, node_modules/normalize.css/normalize.css */
-button,
-html [type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */ }
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-/* line 313, node_modules/normalize.css/normalize.css */
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
-  border-style: none;
-  padding: 0; }
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-/* line 325, node_modules/normalize.css/normalize.css */
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
-  outline: 1px dotted ButtonText; }
-
-/**
- * Change the border, margin, and padding in all browsers (opinionated).
- */
-/* line 336, node_modules/normalize.css/normalize.css */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-/* line 349, node_modules/normalize.css/normalize.css */
-legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */ }
-
-/**
- * Remove the default vertical scrollbar in IE.
- */
-/* line 362, node_modules/normalize.css/normalize.css */
-textarea {
-  overflow: auto; }
-
-/**
- * 1. Add the correct box sizing in IE 10-.
- * 2. Remove the padding in IE 10-.
- */
-/* line 371, node_modules/normalize.css/normalize.css */
-[type="checkbox"],
-[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-/* line 381, node_modules/normalize.css/normalize.css */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto; }
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-/* line 391, node_modules/normalize.css/normalize.css */
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */ }
-
-/**
- * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
- */
-/* line 400, node_modules/normalize.css/normalize.css */
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * Correct the text style of placeholders in Chrome, Edge, and Safari.
- */
-/* line 409, node_modules/normalize.css/normalize.css */
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54; }
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-/* line 419, node_modules/normalize.css/normalize.css */
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */ }
-
-/* line 1, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_reset.scss */
+/*@import "normalize.css/normalize";*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   border: 0; }
 
-/* line 8, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_reset.scss */
 a {
   text-decoration: none; }
 
-/* line 12, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_reset.scss */
 h1, h2, h3 {
+  color: #444;
   font-family: "Oswald", sans-serif; }
 
-/* line 16, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_reset.scss */
 h4, p, a, li {
+  color: #444;
   font-family: "Open Sans", sans-serif; }
 
-/* line 20, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_reset.scss */
+h5 {
+  color: #004819;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: .75px;
+  margin: 0; }
+
+h6 {
+  color: #007bc8;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  letter-spacing: .75px;
+  margin: 1.25rem 0 .5rem; }
+
 a {
   transition: all .2s linear; }
 
-/* line 1, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
 body {
   height: 100%; }
 
-/* line 5, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
 .main {
   margin: 3rem;
   padding: 1em 0 0 0; }
+  .main .main-title {
+    color: #007bc8;
+    font-size: 2rem;
+    text-align: center; }
+  .main .index__title {
+    text-align: center; }
 
 /* primary styles */
-/* line 13, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
 .form-control {
   border-radius: 0;
   font-family: "Open Sans", sans-serif; }
 
 /* Phoenix flash messages */
-/* line 19, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
 .alert:empty {
   display: none; }
 
 /* Phoenix inline forms in links and buttons */
-/* line 22, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
 form.link, form.button {
   display: inline; }
 
 @media screen and (max-width: 770px) {
-  /* line 28, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
   .main {
     margin: 0.5rem 0.5rem 3rem;
-    padding: 0 0.2rem; }
-  /* line 33, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_primaryLayout.scss */
-  .main--first-paragraph {
+    padding: 0 0.2rem 0.2rem; }
+    .main .main-title {
+      font-size: 1.75rem; }
+  .mobile-indent {
     margin-left: 3rem;
     min-height: 3rem; } }
 
-/* line 1, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_buttons.scss */
+@media only screen and (min-width: 1500px) {
+  .main {
+    margin: 3rem 10%; } }
+
+.btn {
+  padding: 4px 8px;
+  margin-bottom: 1px; }
+
 .btn-cz {
   border: 2px solid #004819;
   border-radius: 0;
   background-color: #fdf6e2;
   color: #004819;
   font-family: "Oswald", sans-serif; }
-  /* line 7, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_buttons.scss */
   .btn-cz:hover {
     color: #007bc8; }
 
-/* line 12, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_buttons.scss */
 .btn-project {
   border: 1px solid #CCC;
   border-radius: 0;
   color: #004819;
   font-family: "Oswald", sans-serif; }
-  /* line 17, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_buttons.scss */
   .btn-project:hover {
     color: #007bc8; }
 
-/* line 22, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_buttons.scss */
 .btn-project.btn-inactive {
   background-color: #fff;
   color: #CCC; }
-  /* line 25, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_buttons.scss */
   .btn-project.btn-inactive:hover {
     color: #CCC; }
 
-/* line 1, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
 .navbar {
   background-color: #fdf6e2;
   border-bottom: 2px #004819 solid;
@@ -506,28 +110,21 @@ form.link, form.button {
   top: 0;
   width: 100%;
   z-index: 10; }
-  /* line 12, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
   .navbar .navbar__link {
     color: #004819;
     font-family: "Oswald", sans-serif;
     font-size: 1.3rem; }
-    /* line 17, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
     .navbar .navbar__link:hover {
       color: #007bc8; }
-  /* line 22, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
   .navbar .navbar__links {
     display: flex; }
-    /* line 25, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
     .navbar .navbar__links ul {
       align-items: center;
       display: flex;
       flex-direction: row;
-      height: 100%;
       justify-content: center; }
-      /* line 32, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
       .navbar .navbar__links ul li {
         margin-left: 1rem; }
-  /* line 38, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
   .navbar .navbar__logo {
     align-items: center;
     background-color: #fff;
@@ -540,19 +137,24 @@ form.link, form.button {
     width: 3em; }
 
 @media screen and (max-width: 770px) {
-  /* line 52, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
   .navbar {
     border-bottom: 0;
     border-top: 2px #004819 solid;
     bottom: 0;
     justify-content: center;
     top: initial; }
-    /* line 59, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_navbar.scss */
     .navbar .navbar__logo {
-      display: none; } }
+      display: none; }
+    .navbar .navbar__links {
+      width: 100%;
+      padding: 0 20px; }
+      .navbar .navbar__links ul {
+        justify-content: space-between;
+        width: 100%; }
+        .navbar .navbar__links ul li {
+          margin: 0; } }
 
 /* Footer */
-/* line 2, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
 .footer {
   align-items: stretch;
   background-color: #fdf6e2;
@@ -562,30 +164,24 @@ form.link, form.button {
   justify-content: center;
   position: fixed;
   width: 100%; }
-  /* line 12, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
   .footer .footer__icons {
     align-items: center;
     display: flex;
     flex: 1;
     height: 100%;
     justify-content: center; }
-    /* line 19, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
     .footer .footer__icons a {
-      width: 2.5em; }
-  /* line 24, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
+      margin: 0 10px; }
   .footer .footer__link--home {
     display: none; }
 
-/* line 29, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
 svg {
   fill: #004819;
   height: 20px; }
-  /* line 32, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
   svg:hover {
     fill: #007bc8; }
 
 @media screen and (max-width: 770px) {
-  /* line 38, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
   .footer {
     bottom: initial;
     border-bottom: 2px #004819 solid;
@@ -595,24 +191,108 @@ svg {
     height: initial;
     top: 0;
     width: 3rem; }
-    /* line 48, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
     .footer .footer__icons {
       flex-direction: column; }
-      /* line 50, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
       .footer .footer__icons a {
         margin-top: 0.5em;
         width: initial; }
-    /* line 56, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
     .footer .footer__link--home {
       display: initial;
       color: #004819;
       font-family: "Oswald", sans-serif;
       font-size: 1.3rem; }
-      /* line 62, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_footer.scss */
       .footer .footer__link--home:hover {
         color: #007bc8; } }
 
-/* line 1, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
+.about__content {
+  align-items: center;
+  border: 1px solid #ccc;
+  border-top: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  min-height: 400px;
+  padding: 0 1rem;
+  position: relative; }
+
+.about .favorites {
+  margin-top: 1rem; }
+
+.about .favorite {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; }
+  .about .favorite__detail {
+    flex: 1;
+    font-family: "Open Sans", sans-serif;
+    margin-left: .5rem; }
+  .about .favorite__icon {
+    width: 30px; }
+    .about .favorite__icon img {
+      height: auto;
+      width: 100%; }
+  .about .favorite__info {
+    display: flex;
+    flex-direction: row; }
+  .about .favorite__title {
+    color: #007bc8;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: .5rem;
+    text-transform: uppercase; }
+
+.about .map-wrapper {
+  position: absolute;
+  height: 90%;
+  left: 5%;
+  width: 90%; }
+
+.about #map-goes-here {
+  border: 1px solid #004819;
+  height: 80%;
+  position: absolute;
+  width: 100%; }
+
+.about__topics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.about .topic {
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  color: #004819;
+  display: flex;
+  flex: 1 1 50%;
+  font-family: "Oswald", sans-serif;
+  justify-content: center;
+  text-transform: uppercase; }
+  .about .topic:hover {
+    background-color: #fafafa;
+    color: #007bc8; }
+  .about .topic--active {
+    background-color: #fdf6e2;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid transparent; }
+    .about .topic--active:hover {
+      background-color: #fdf6e2;
+      color: #004819; }
+
+@media screen and (max-width: 770px) {
+  .about__content {
+    margin-bottom: 2rem; }
+  .about .favorite__detail {
+    font-size: .8rem; }
+  .about .main-title {
+    margin: 2rem; }
+  .about__topics {
+    height: 2rem; }
+  .about .topic {
+    font-size: .8rem; } }
+
+code {
+  background-color: #fdf6e2;
+  color: #004819; }
+
 .bunch-of-code {
   position: absolute;
   top: 65px;
@@ -620,104 +300,205 @@ svg {
   opacity: 0.06;
   overflow: hidden; }
 
-/* line 9, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
-.blog-title,
-.main-title {
-  text-align: center;
-  color: #007bc8; }
+.blog-title {
+  color: #007bc8;
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+  text-align: center; }
 
-/* line 15, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
 .blog-date {
   text-align: center;
   font-size: 1em;
   color: #666; }
 
-/* line 21, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
 textarea.big-form {
   height: 200px; }
 
-/* line 25, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
+.blog-content {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding-bottom: 2rem; }
+  .blog-content h3 {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+  .blog-content a {
+    color: #004819;
+    font-family: oswald;
+    font-size: 0.85rem;
+    text-transform: uppercase; }
+    .blog-content a:hover {
+      color: #007bc8; }
+  .blog-content p {
+    line-height: 1.35; }
+
 .blog-content pre {
   margin: 5px 25px; }
 
-/* line 29, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
 .blog-index {
   text-align: center;
-  list-style-type: none; }
-  /* line 32, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
+  list-style-type: none;
+  padding-bottom: 10px; }
+  .blog-index li {
+    margin-bottom: 1.5rem; }
+  .blog-index .blog-index__title {
+    display: block; }
+  .blog-index .blog-index__metadata {
+    display: flex;
+    flex-direction: row; }
+  .blog-index .blog-index__date {
+    color: #888;
+    font-size: 0.75em; }
   .blog-index li a {
-    font-family: "Oswald", sans-serif; }
-    /* line 34, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
+    color: #004819;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.2rem; }
     .blog-index li a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #007bc8; }
 
-/* line 40, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_blog.scss */
-.blog-index-date {
-  color: #888;
-  font-size: 0.75em; }
+.blog-tags {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px; }
 
-/* line 1, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
+.blog-tags--horizontal {
+  display: flex;
+  justify-content: center; }
+  .blog-tags--horizontal .tag {
+    font-size: 0.6em;
+    padding: 2px 7px; }
+
+.tag {
+  align-items: center;
+  background-color: #004819;
+  border: 1px solid #CCC;
+  color: #fff;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 3px 8px; }
+  .tag.ruby {
+    background-color: #b31301; }
+  .tag.elixir {
+    background-color: #584364; }
+  .tag.phoenix {
+    background-color: #f46f37; }
+  .tag.javascript {
+    background-color: #f0da50; }
+  .tag.go {
+    background-color: #6ed7e1; }
+
+@media screen and (max-width: 770px) {
+  code {
+    font-size: 0.8rem; } }
+
+form textarea {
+  width: 700px; }
+
 .dev-project {
   border: 1px #CCC solid;
   padding: 0;
   margin: 5px 15px 20px 15px; }
-  /* line 5, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
   .dev-project .embed-responsive {
     margin: 5px 5%; }
+  .dev-project iframe {
+    margin-bottom: 5px; }
+  .dev-project:last-of-type {
+    margin-bottom: 4rem; }
 
-/* line 11, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
-.dev-project-img img {
-  width: 100%;
-  padding: 10px 40px; }
+.dev-project-img {
+  margin-bottom: 10px; }
+  .dev-project-img img {
+    width: 100%; }
 
-/* line 17, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
 .dev-project-title {
   color: #004819;
   font-family: "Oswald", sans-serif;
   font-size: 1.3em;
   margin: 0; }
 
-/* line 24, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
 .dev-project-date {
   color: #888;
   font-size: 0.8em;
   font-family: "Oswald", sans-serif;
   margin-left: 5px; }
 
-/* line 31, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
 .dev-project-header {
   background-color: #fdf6e2;
   border-bottom: 1px #CCC solid;
   padding: 3px 10px; }
 
-/* line 37, /Users/Adam/Dev/elixir/adamcz_dot_com/web/static/css/_dev.scss */
 .dev-project-description {
-  padding: 8px;
+  padding: 0 8px 12px;
   font-size: 0.9em; }
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em; }
+  .tech-stack span {
+    background-color: #fdf6e2;
+    border: 1px solid #CCC;
+    color: #007bc8;
+    padding: 2px;
+    margin-right: 5px;
+    margin-bottom: 5px; }
+
+@media screen and (max-width: 770px) {
+  .dev-project:last-of-type {
+    margin-bottom: 1rem; } }
+
+.resume__wrapper {
+  display: flex;
+  justify-content: center; }
+
+.resume__main {
+  max-width: 45rem; }
+
+.resume__name {
+  color: #007bc8;
+  font-size: 2rem;
+  margin-bottom: .75rem;
+  text-align: center; }
+
+.resume__title {
+  color: #004819;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.sub-heading {
+  color: #444;
+  font: 800 0.8rem "Open Sans", sans-serif;
+  margin: 0; }
+
+.center {
+  text-align: center; }
+
+.mb-lg {
+  margin-bottom: 5rem; }
 
 /*
 Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com>
 */
-
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
   background: #002b36;
-  color: #839496;
-}
+  color: #839496; }
 
 .hljs-comment,
 .hljs-quote {
-  color: #586e75;
-}
+  color: #586e75; }
 
 /* Solarized Green */
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-addition {
-  color: #859900;
-}
+  color: #859900; }
 
 /* Solarized Cyan */
 .hljs-number,
@@ -726,8 +507,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-literal,
 .hljs-doctag,
 .hljs-regexp {
-  color: #2aa198;
-}
+  color: #2aa198; }
 
 /* Solarized Blue */
 .hljs-title,
@@ -735,8 +515,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-name,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #268bd2;
-}
+  color: #268bd2; }
 
 /* Solarized Yellow */
 .hljs-attribute,
@@ -745,8 +524,7 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-template-variable,
 .hljs-class .hljs-title,
 .hljs-type {
-  color: #b58900;
-}
+  color: #b58900; }
 
 /* Solarized Orange */
 .hljs-symbol,
@@ -757,26 +535,19 @@ Orginal Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmai
 .hljs-selector-attr,
 .hljs-selector-pseudo,
 .hljs-link {
-  color: #cb4b16;
-}
+  color: #cb4b16; }
 
 /* Solarized Red */
 .hljs-built_in,
 .hljs-deletion {
-  color: #dc322f;
-}
+  color: #dc322f; }
 
 .hljs-formula {
-  background: #073642;
-}
+  background: #073642; }
 
 .hljs-emphasis {
-  font-style: italic;
-}
+  font-style: italic; }
 
 .hljs-strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
-
-/*# sourceMappingURL=app.css.map*/

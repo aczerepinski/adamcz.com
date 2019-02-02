@@ -16,14 +16,15 @@ defmodule AdamczDotCom.Router do
 
   scope "/", AdamczDotCom do
     pipe_through :browser # Use the default browser stack
-    resources "/users", UserController, only: [:index, :show, :new, :create, :edit, :udpate, :delete]
+    resources "/users", UserController, only: [:index, :show, :new, :create, :edit, :update, :delete]
     resources "/blog", BlogController, only: [:index, :show, :new, 
         :create, :edit, :update], param: "slug"
     resources "/sessions", SessionController, only: [:new, :create, :delete]
-    resources "/tags", TagController, only: [:index, :show, :new, :create, :edit, :udpate, :delete]
+    resources "/tags", TagController, only: [:index, :show, :new, :create, :edit, :update, :delete]
     get "/about", PageController, :about
     get "/dev", PageController, :dev
     get "/music", PageController, :music
+    get "/resume", PageController, :resume
     get "/", PageController, :index
   end
 

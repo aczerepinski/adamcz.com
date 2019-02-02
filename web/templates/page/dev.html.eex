@@ -1,4 +1,4 @@
-<h2 class="main-title">DEV PROJECTS</h2>
+<h2 class="main-title">Dev Projects</h2>
 <p class="mobile-indent">Here are some of the personal/side projects that I build for fun:</p>
 
 <!-- DBMAJ7.COM -->
@@ -27,7 +27,7 @@
   </div>
   <div class="dev-project-description">
     <p>
-     This website - meaning adamcz.com - is the first project I built with Elixir and Phoenix. It's a simple self-hosted blogging platform, and an excuse to spend some time with amazing functional languages like Elixir and Elm.
+     This website is the first project I built with Elixir and Phoenix. It's a simple self-hosted blogging platform, and an excuse to spend some time with functional languages like Elixir and Elm.
     </p>
     <div class="tech-stack">
       <span>Elixir</span><span>Phoenix</span><span>Ecto</span><span>PostgreSQL</span><span>Elm</span>

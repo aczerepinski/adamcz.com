@@ -79,7 +79,7 @@ view model =
     div [ class "about" ]
         [ h2
             [ class "main-title" ]
-            [ text "ABOUT ADAM CZEREPINSKI" ]
+            [ text "About Adam Czerepinski" ]
         , div
             [ class "about__topics" ]
             [ div [ class (topicClasses model "bio"), onClick (LoadBio) ] [ text "bio" ]

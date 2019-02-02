@@ -3,7 +3,7 @@ defmodule AdamczDotCom.BlogView do
 
   def markdown(content) do
     content
-    |> Earmark.to_html(%Earmark.Options{gfm: true})
+    |> Earmark.as_html!(%Earmark.Options{gfm: true})
     |> raw
   end
 
